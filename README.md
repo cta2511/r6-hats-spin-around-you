@@ -88,7 +88,7 @@ game['Run Service'].RenderStepped:Connect(function()
 	l = (l >= 360 and 1 or l + speed);
 	
 	for i, v in pairs(par) do
-		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 2, 0);
+		v.CFrame = CFrame.new(chr.HumanoidRootPart.Position) * CFrame.fromEulerAnglesXYZ(0, math.rad(l + (360 / #par) * i + speed), 0) * CFrame.new(offset, 0, 0);
 	end
 	
 	if heighti == 3 then
